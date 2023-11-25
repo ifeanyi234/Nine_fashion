@@ -1,0 +1,14 @@
+@keyframes image_slider {
+  0% {
+    background-image: url(/asset/images/slide_img1.png);
+  }
+  33% {
+    background-image: url(/asset/images/slide_img2.png);
+  }
+  66% {
+    background-image: url(/asset/images/slide_img3.png);
+  }
+  100% {
+    background-image: url(/asset/images/slide_img4.png);
+  }
+}
