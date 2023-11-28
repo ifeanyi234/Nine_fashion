@@ -2,7 +2,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 1.6rem; }
 
 body::-webkit-scrollbar {
   display: none; }
@@ -63,12 +64,6 @@ a.fontbig,
 button.fontbig {
   font-size: 1.6rem; }
 
-.container {
-  padding-inline: 8%; }
-
-.center--text {
-  text-align: center; }
-
 .btn {
   color: #fff;
   padding: 1rem;
@@ -121,11 +116,6 @@ button.fontbig {
   align-items: center;
   background-color: #ff011f; }
 
-.promo {
-  background-color: #061620;
-  color: #fff;
-  padding-block: 1.8rem; }
-
 .icon {
   transition: 0.25s ease-in-out; }
   .icon path {
@@ -137,61 +127,3 @@ button.fontbig {
     fill: none; }
   .icon--cart {
     position: relative; }
-
-.column--2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem; }
-
-.column--3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem; }
-
-.column--4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem; }
-
-.header {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  padding-block: 2rem 3rem;
-  gap: 5rem; }
-  .header__logo {
-    display: flex; }
-  .header__nav-list {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    height: 100%; }
-  .header__nav-link {
-    color: #000;
-    transition: 0.2s ease-in-out; }
-    .header__nav-link:hover {
-      color: #0ba3f8; }
-  .header__controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem; }
-    .header__controls-icons {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      height: 100%; }
-
-.banner * {
-  width: 100%; }
-
-.banner__slider {
-  width: 100%;
-  background-size: cover;
-  color: #fff;
-  animation: image_slider 5s ease-in-out 2s infinite alternate backwards;
-  transition: background-image 0.2s;
-  padding-inline: 16%; }
-  .banner__slider-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem; }
