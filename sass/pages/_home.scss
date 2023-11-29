@@ -1,0 +1,12 @@
+.home {
+  &__body {
+    display: grid;
+    grid-template-rows: 8.6rem min-content minmax(20rem, 39vw);
+    grid-template-columns:
+      [gutterfirst-start]minmax(2rem, 1fr) [gutterfirst-end] repeat(
+        12,
+        [col-start] 1fr [col-end]
+      )
+      [guttersec-start]minmax(2rem, 1fr) [guttersec-end];
+  }
+}

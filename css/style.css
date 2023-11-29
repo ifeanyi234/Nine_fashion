@@ -95,35 +95,42 @@ button.fontbig {
   .btn-tertiary:hover {
     background-color: #0ba3f8; }
 
-.link {
-  color: #000; }
-  .link:hover {
-    color: #0ba3f8; }
+.footer {
+  grid-column: gutterfirst-start/guttersec-end; }
 
-.notification {
-  position: relative; }
+.header {
+  grid-column: gutterfirst-start / -1;
+  background-color: #fff;
+  position: sticky;
+  top: 0; }
 
-.notification-number {
-  position: absolute;
-  top: -0.8rem;
-  right: -1.2rem;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff011f; }
+.hero__home {
+  grid-column: gutterfirst-start / -1; }
 
-.icon {
-  transition: 0.25s ease-in-out; }
-  .icon path {
-    fill: black;
-    transition: 0.25s ease-in-out; }
-  .icon:hover {
-    transform: scale(1.1) translateY(-2px); }
-  .icon--profile path {
-    fill: none; }
-  .icon--cart {
-    position: relative; }
+.latest {
+  grid-column: gutterfirst-end / guttersec-start; }
+
+.main {
+  grid-column: col-start 1 / -2; }
+
+.news {
+  grid-column: gutterfirst-end / guttersec-start; }
+
+.promo {
+  grid-column: gutterfirst-start / -1;
+  background-color: #061620;
+  color: #fff; }
+
+.steps {
+  grid-column: gutterfirst-end / guttersec-start; }
+
+.testimonial {
+  grid-column: gutterfirst-start / -1; }
+
+.trend {
+  grid-column: col-start 1 / guttersec-start; }
+
+.home__body {
+  display: grid;
+  grid-template-rows: 8.6rem min-content minmax(20rem, 39vw);
+  grid-template-columns: [gutterfirst-start] minmax(2rem, 1fr) [gutterfirst-end] repeat(12, [col-start] 1fr [col-end]) [guttersec-start] minmax(2rem, 1fr) [guttersec-end]; }
