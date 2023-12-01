@@ -10,3 +10,24 @@
       [guttersec-start]minmax(2rem, 1fr) [guttersec-end];
   }
 }
+
+.hero {
+  &__home {
+    grid-column: gutterfirst-start / -1;
+  }
+}
+.latest {
+  grid-column: gutterfirst-end / guttersec-start;
+}
+.news {
+  grid-column: gutterfirst-end / guttersec-start;
+}
+.steps {
+  grid-column: gutterfirst-end / guttersec-start;
+}
+.testimonial {
+  grid-column: gutterfirst-start / -1;
+}
+.trend {
+  grid-column: col-start 1 / guttersec-start;
+}

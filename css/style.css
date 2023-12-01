@@ -128,7 +128,8 @@ button.fontbig {
   grid-column: gutterfirst-start / -1; }
 
 .trend {
-  grid-column: col-start 1 / guttersec-start; }
+  grid-column: col-start 1 / guttersec-start;
+  background-color: red; }
 
 .home__body {
   display: grid;
