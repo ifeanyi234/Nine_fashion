@@ -11,11 +11,6 @@
   }
 }
 
-.hero {
-  &__home {
-    grid-column: gutterfirst-start / -1;
-  }
-}
 .latest {
   grid-column: gutterfirst-end / guttersec-start;
 }
