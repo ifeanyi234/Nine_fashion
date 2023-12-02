@@ -17,7 +17,43 @@
   </head>
   <body class="home__body">
     <!-- * The header section of the page -->
-    <header class="header">header</header>
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link">
+          <!-- <img src="./images/l" alt="" class="header__logo-img"> -->
+          <svg class="header__logo-img">
+            <use xlink:href="./images/sprites.svg#icon-header-logo"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Women</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Men</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Accessories</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">911</a></li>
+        </ul>
+      </nav>
+      <div class="header__action">
+        <div class="header__icons">
+          <svg class="header__icon">
+            <use xlink:href="./images/sprites.svg#icon-search"></use>
+          </svg>
+          <svg class="header__icon">
+            <use xlink:href="./images/sprites.svg#icon-profile"></use>
+          </svg>
+          <svg class="header__icon">
+            <use xlink:href="./images/sprites.svg#icon-shopping-cart"></use>
+          </svg>
+        </div>
+        <div class="header__button">
+          <button class="btn btn-primary">Request Proposal</button>
+        </div>
+      </div>
+    </header>
     <!-- * The Promo section of the page -->
     <section class="promo">Promo</section>
     <!-- * The hero section of the page -->

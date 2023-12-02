@@ -1,0 +1,10 @@
+.nav {
+  grid-column: col-start 4 / col-end 6;
+
+  display: flex;
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+}

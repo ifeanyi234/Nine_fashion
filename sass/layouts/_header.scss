@@ -4,4 +4,45 @@
   background-color: $white;
   position: sticky;
   top: 0;
+
+  display: grid;
+  grid-template-columns:
+    [gutterfirst-start]minmax(2rem, 1fr) [gutterfirst-end] repeat(
+      11,
+      [col-start] 1fr [col-end]
+    )
+    [guttersec-start]minmax(2rem, 1fr) [guttersec-end];
+
+  &__logo {
+    grid-column: col-start 1 / col-end 1;
+    display: flex;
+    align-items: center;
+
+    &-link {
+      display: flex;
+      align-items: center;
+    }
+
+    &-img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+  &__icons {
+    display: flex;
+    gap: 2.2rem;
+  }
+  &__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 4rem;
+
+    grid-column: col-start 9 / col-end 11;
+  }
 }
