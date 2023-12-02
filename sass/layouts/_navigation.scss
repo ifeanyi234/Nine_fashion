@@ -7,4 +7,13 @@
     align-items: center;
     gap: 3rem;
   }
+  &__link {
+    color: $secondary-color;
+    transition: $transition;
+    // font-size: clamp(1rem, 1.6rem, 1.6vw);
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
 }

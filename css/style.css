@@ -14,6 +14,10 @@ body::-webkit-scrollbar {
   box-sizing: inherit;
   font-family: "Poppins", sans-serif; }
 
+*::selection {
+  color: #0ba3f8;
+  background-color: #061620; }
+
 ul {
   list-style: none; }
 
@@ -138,11 +142,20 @@ button.fontbig {
     display: flex;
     align-items: center;
     gap: 3rem; }
+  .nav__link {
+    color: #061620;
+    transition: 0.25s ease-in-out; }
+    .nav__link:hover {
+      color: #0ba3f8; }
 
 .promo {
   grid-column: gutterfirst-start / -1;
   background-color: #061620;
-  color: #fff; }
+  color: #fff;
+  text-align: center;
+  padding: 1.8rem 2rem; }
+  .promo__text {
+    font-size: clamp(1.4rem, 1.9vw, 1.8rem); }
 
 .home__body {
   display: grid;

@@ -4,6 +4,10 @@
   box-sizing: inherit;
   font-family: "Poppins", sans-serif;
 }
+*::selection {
+  color: $primary-color;
+  background-color: $secondary-color;
+}
 
 ul {
   list-style: none;
