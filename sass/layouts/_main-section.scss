@@ -1,3 +1,31 @@
 .main {
   grid-column: col-start 1 / -2;
+  margin-top: 10rem;
+
+  &__title-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  &__nav {
+    width: 100%;
+    max-width: 35rem;
+    &-list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-link {
+      color: $black;
+      transition: $transition;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &-link.active {
+      border-bottom: 1px solid currentColor;
+    }
+  }
 }

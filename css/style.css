@@ -175,7 +175,25 @@ button.fontbig {
     object-fit: cover; }
 
 .main {
-  grid-column: col-start 1 / -2; }
+  grid-column: col-start 1 / -2;
+  margin-top: 10rem; }
+  .main__title-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; }
+  .main__nav {
+    width: 100%;
+    max-width: 35rem; }
+    .main__nav-list {
+      display: flex;
+      justify-content: space-between; }
+    .main__nav-link {
+      color: #000;
+      transition: 0.25s ease-in-out; }
+      .main__nav-link:hover {
+        color: #0ba3f8; }
+    .main__nav-link.active {
+      border-bottom: 1px solid currentColor; }
 
 .nav {
   grid-column: col-start 4 / col-end 6;
